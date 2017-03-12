@@ -1,0 +1,5 @@
+non-vehicles/
+vehicles/
+object-detection-crowdai/
+.idea/
+__pycache__/
