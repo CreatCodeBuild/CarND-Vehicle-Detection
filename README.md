@@ -157,4 +157,9 @@ python pipeline.py
 
 It processes each frame of [project_video.mp4](https://github.com/CreatCodeBuild/CarND-Vehicle-Detection/blob/master/project_video.mp4) and produces the result [project_video_out.mp4](https://github.com/CreatCodeBuild/CarND-Vehicle-Detection/blob/master/project_video_out.mp4)
 
+## Discussion
+The video pipeline is good enough when each car is separated with some amount of distance. When 2 or more cars overlap, the pipeline treat them as one single car.
 
+This is because the algorithm only knows which area is a car and which is not. It doesn't know the difference between 1 car and another.
+
+A posible approach is R-CNN architecture which trains a object detection pipeline end-to-end. One key technique of such an architecture is the it runs a clustering against all the boxing boxes, which might be a better way to fight false positivie than naive heatmap approach.
