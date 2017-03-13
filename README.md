@@ -1,8 +1,8 @@
 # Vehicle Detection
 ### Outline
-__1. Training Classifier__
-__2. Sliding Window Search__
-__3. Video Pipeline__
+__1. Training Classifier__  
+__2. Sliding Window Search__  
+__3. Video Pipeline__  
 
 ### Training Classifier
 #### 1. Prepare Data
